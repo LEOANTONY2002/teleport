@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="logo64.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Teleport - The Chat App" />
+    <link rel="apple-touch-icon" href="logo64.png" />
+    <link rel="apple-touch-startup-image" href="logo192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Teleport</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+</head>
+
+<style>
+    * {
+        font-family: "Poppins";
+    }
+</style>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("./serviceworker.js")
+                    .then((reg) => console.log("Success...", reg.scope))
+                    .catch((err) => console.log("Fail...", err));
+            });
+        }
+    </script>
+</body>
+
+</html>

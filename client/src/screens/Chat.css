@@ -1,0 +1,106 @@
+.mes-list {
+    overflow: scroll;
+    height: 70vh;
+}
+
+.mlist {
+    width: 270px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.date {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: small;
+    color: #d3a2fc;
+}
+
+.mlist>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.mlist>div>p {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(64, 2, 85, 0.215);
+    padding: 10px 15px;
+    font-size: small;
+    background-color: #e5c9fc;
+    border-radius: 20px;
+    width: max-content;
+    min-width: 50px;
+    max-width: 150px;
+}
+
+.mlist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.mlist span {
+    font-size: 10px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+}
+
+.send input {
+    width: 240px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.send img {
+    width: 25px;
+    padding: 10px;
+    box-shadow: 0 3px 20px 0 rgba(90, 35, 125, 0.196);
+    background: linear-gradient(120deg, rgb(137, 3, 167), rgb(48, 4, 97));
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -40px;
+}
+
+.cam input {
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cam img {
+    position: absolute;
+    width: 15px;
+    padding: 8px;
+    box-shadow: none;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+@media (min-height: 650px) {
+    .mlist {
+        height: 70vh;
+    }
+}

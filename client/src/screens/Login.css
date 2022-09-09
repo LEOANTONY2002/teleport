@@ -1,0 +1,125 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 215, 250);
+    overflow: hidden;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 0;
+    text-indent: 15px;
+    box-shadow: 0 3px 20px 0 rgba(90, 35, 125, 0.196);
+    background: linear-gradient(120deg, rgb(251, 241, 255), rgb(241, 236, 250));
+    transition: all ease-in-out 0.3s;
+}
+
+.login input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 15px solid #d9a5fe79;
+    border-radius: 50px;
+}
+
+.login>span {
+    color: #270b82;
+    font-size: small;
+    padding: 10px 0;
+}
+
+.login button {
+    width: 120px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(250, 238, 253);
+    background: linear-gradient(120deg, rgb(131, 5, 173), rgb(74, 4, 172));
+    border: none;
+    box-shadow: 0 5px 25px rgba(139, 6, 221, 0.648);
+    cursor: pointer;
+}
+
+.login>p {
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all ease-in-out 0.2s;
+    color: #6a05c2;
+}
+
+.login>p:hover {
+    color: rgb(124, 6, 203);
+    box-shadow: 0 5px 25px rgba(139, 6, 221, 0.459);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.photo>img,
+.login>img {
+    width: 100px;
+    padding: 20px;
+    background: linear-gradient(120deg, rgb(131, 5, 173), rgb(74, 4, 172));
+    /* box-shadow: 0 5px 25px rgba(139, 6, 221, 0.648); */
+    border-radius: 50%;
+}
+
+.login>img {
+    width: 80px;
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(139, 6, 221, 0.648);
+}
+
+.camera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -20px;
+}
+
+.camera input {
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.camera img {
+    position: fixed;
+    width: 25px;
+    padding: 10px;
+    background: none;
+    background-color: rgb(233, 215, 250);
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+}
+
+.or span {
+    width: 100px;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+.or p {
+    margin: 5px 20px;
+}

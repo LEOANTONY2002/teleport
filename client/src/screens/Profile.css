@@ -1,0 +1,69 @@
+.profile {
+    width: 80vh;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(233, 215, 250);
+    border-radius: 50%;
+}
+
+.profile header {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    background: linear-gradient(120deg, #610480, rgb(47, 2, 109));
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 5px 20px 0 rgba(73, 2, 118, 0.744);
+    margin: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0 5px 20px 0 rgba(20, 0, 32, 0.744);
+}
+
+.profile p {
+    background-color: rgba(148, 72, 220, 0.628);
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 3px;
+    color: rgb(242, 233, 251);
+    box-shadow: 0 3px 20px 0 rgba(130, 2, 209, 0.363);
+}
+
+.profile span {
+    color: rgb(200, 146, 251);
+}
+
+.acts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.acts img {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(120deg, #610480, rgb(47, 2, 109));
+    padding: 7px;
+    cursor: pointer;
+    margin: 10px;
+}
