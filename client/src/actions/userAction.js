@@ -17,11 +17,3 @@ export const loginAction = async(dispatch, user) => {
         dispatch({ type: "LOGIN", payload: error });
     }
 };
-
-export const socketAction = async(dispatch, io) => {
-    try {
-        dispatch({ type: "SOCKET", payload: io });
-    } catch (error) {
-        dispatch({ type: "SOCKET", payload: error });
-    }
-};
