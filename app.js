@@ -57,7 +57,7 @@ mongoose.connect(process.env.DB, (err) => {
     else console.log("mongdb is connected");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log("START");
 });
 
