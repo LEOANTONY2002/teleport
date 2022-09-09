@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/chat", chatRouter);
 app.use(express.static(path.join(__dirname, "client", "build")));
-app.use(express.static("../public"));
+// app.use(express.static("client/public"));
 
 app.use((req, res, next) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
