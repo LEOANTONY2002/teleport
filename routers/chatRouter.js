@@ -1,9 +1,6 @@
 const express = require("express");
 const Chat = require("../models/Chat");
 const User = require("../models/User");
-const multer = require("multer");
-const fs = require("fs");
-const path = require("path");
 const ObjectId = require("mongoose").Types.ObjectId;
 
 const router = express.Router();
