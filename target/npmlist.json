@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"server","dependencies":{"body-parser":{"version":"1.20.0"},"cors":{"version":"2.8.5"},"dotenv":{"version":"16.0.1"},"express":{"version":"4.18.1"},"mongodb":{"version":"4.8.0"},"mongoose":{"version":"6.4.6"},"multer":{"version":"1.4.5-lts.1"},"socket.io":{"version":"4.5.1"}}}
