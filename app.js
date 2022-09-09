@@ -61,6 +61,6 @@ app.listen(process.env.PORT || 5000, () => {
     console.log("START");
 });
 
-server.listen(process.env.PORT || 5000, () => {
+server.listen(5000, () => {
     console.log("START");
 });
