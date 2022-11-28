@@ -6,7 +6,7 @@ import { msgListAction, sendAction } from "../actions/chatAction";
 import "./Chat.css";
 import FileBase64 from "react-file-base64";
 
-const socket = io.connect("https://leoteleportsocket.herokuapp.com");
+const socket = io.connect("https://leoteleportsocket.onrender.com");
 
 function Chat() {
   const user = useSelector((state) => state.user);
